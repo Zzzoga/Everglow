@@ -780,7 +780,7 @@ body[data-page="product"] main {
   }
 
   .header__bar {
-    top: 0;
+    top: 10px;
   }
 }
 
