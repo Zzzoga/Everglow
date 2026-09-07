@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Корзина — EVERGLOW</title>
+    <meta
+      name="description"
+      content="Корзина — мультибрендовый магазин косметики Everglow"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="preload"
+      href="fonts/google-sans-variable.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <script defer src="libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="libs/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body data-page="cart">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container">
+        <div class="header__bar">
+          <button
+            class="icon-button header__burger"
+            type="button"
+            data-open="mobile-menu"
+            aria-label="Открыть меню"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <img
+              class="icon"
+              src="img/menu.svg"
+              width="24"
+              height="24"
+              alt=""
+            /></button
+          ><a class="logo" href="index.html" aria-label="Everglow — главная"
+            ><img src="img/logo.png" alt="Everglow" width="52" height="52"
+          /></a>
+          <nav class="header__nav" aria-label="Основная навигация">
+            <a href="catalog.html">Каталог</a><a href="brands.html">Бренды</a
+            ><a href="catalog.html?sort=new">Новинки</a
+            ><a href="catalog.html?category=Лицо">Уход</a
+            ><a href="catalog.html?category=Макияж">Макияж</a
+            ><a href="catalog.html?category=Парфюм">Парфюм</a>
+          </nav>
+          <div class="header__actions">
+            <a class="icon-button" href="search.html" aria-label="Поиск"
+              ><img
+                class="icon"
+                src="img/search.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="favorites.html"
+              aria-label="Избранное"
+              ><img
+                class="icon"
+                src="img/heart.svg"
+                width="24"
+                height="24"
+                alt="" /><span
+                class="counter"
+                data-favorites-count
+                hidden
+              ></span></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="login.html"
+              aria-label="Личный кабинет"
+              ><img
+                class="icon"
+                src="img/user.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a class="icon-button" href="cart.html" aria-label="Корзина"
+              ><img
+                class="icon"
+                src="img/bag.svg"
+                width="24"
+                height="24"
+                alt="" /><span class="counter" data-cart-count hidden></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a><span aria-hidden="true">→</span
+            ><span aria-current="page">Корзина</span>
+          </nav>
+          <h1>Корзина</h1>
+          <p class="page-intro__text">
+            Проверьте товары перед оформлением заказа.
+          </p>
+        </div>
+      </section>
+      <section class="section section--compact">
+        <div class="container">
+          <div class="checkout-layout" data-cart-layout>
+            <div>
+              <p data-summary-count></p>
+              <div data-cart-items>
+                <article class="cart-item" data-cart-item="babor">
+                  <a href="product.html?id=babor"
+                    ><img
+                      src="img/placeholder-01.webp"
+                      width="150"
+                      height="162"
+                      alt="Рождественский адвент-календарь 2025/26"
+                  /></a>
+                  <div class="cart-item__info">
+                    <p class="eyebrow">BABOR</p>
+                    <h2>
+                      <a href="product.html?id=babor"
+                        >Рождественский адвент-календарь 2025/26</a
+                      >
+                    </h2>
+                    <p class="muted">Набор · 24 дня ухода</p>
+                    <div class="cart-item__actions">
+                      <div class="quantity" data-quantity="babor">
+                        <button
+                          type="button"
+                          data-step="-1"
+                          aria-label="Уменьшить количество"
+                        >
+                          −</button
+                        ><input
+                          type="number"
+                          min="1"
+                          max="99"
+                          value="1"
+                          aria-label="Количество"
+                        /><button
+                          type="button"
+                          data-step="1"
+                          aria-label="Увеличить количество"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <button
+                        class="text-button"
+                        type="button"
+                        data-remove="babor"
+                      >
+                        Удалить
+                      </button>
+                    </div>
+                  </div>
+                  <strong class="cart-item__price" data-line-price
+                    >8 483 ₽</strong
+                  >
+                </article>
+                <article class="cart-item" data-cart-item="intrigue">
+                  <a href="product.html?id=intrigue"
+                    ><img
+                      src="img/placeholder-05.webp"
+                      width="150"
+                      height="162"
+                      alt="Крем для волос INTRIGUE"
+                  /></a>
+                  <div class="cart-item__info">
+                    <p class="eyebrow">KAMALI</p>
+                    <h2>
+                      <a href="product.html?id=intrigue"
+                        >Крем для волос INTRIGUE</a
+                      >
+                    </h2>
+                    <p class="muted">Несмываемый уход · 250 мл</p>
+                    <div class="cart-item__actions">
+                      <div class="quantity" data-quantity="intrigue">
+                        <button
+                          type="button"
+                          data-step="-1"
+                          aria-label="Уменьшить количество"
+                        >
+                          −</button
+                        ><input
+                          type="number"
+                          min="1"
+                          max="99"
+                          value="1"
+                          aria-label="Количество"
+                        /><button
+                          type="button"
+                          data-step="1"
+                          aria-label="Увеличить количество"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <button
+                        class="text-button"
+                        type="button"
+                        data-remove="intrigue"
+                      >
+                        Удалить
+                      </button>
+                    </div>
+                  </div>
+                  <strong class="cart-item__price" data-line-price
+                    >690 ₽</strong
+                  >
+                </article>
+                <article class="cart-item" data-cart-item="love">
+                  <a href="product.html?id=love"
+                    ><img
+                      src="img/placeholder-11.webp"
+                      width="150"
+                      height="162"
+                      alt="LOVE smoothing Шампунь"
+                  /></a>
+                  <div class="cart-item__info">
+                    <p class="eyebrow">DAVINES</p>
+                    <h2>
+                      <a href="product.html?id=love">LOVE smoothing Шампунь</a>
+                    </h2>
+                    <p class="muted">Шампунь · 250 мл</p>
+                    <div class="cart-item__actions">
+                      <div class="quantity" data-quantity="love">
+                        <button
+                          type="button"
+                          data-step="-1"
+                          aria-label="Уменьшить количество"
+                        >
+                          −</button
+                        ><input
+                          type="number"
+                          min="1"
+                          max="99"
+                          value="1"
+                          aria-label="Количество"
+                        /><button
+                          type="button"
+                          data-step="1"
+                          aria-label="Увеличить количество"
+                        >
+                          +
+                        </button>
+                      </div>
+                      <button
+                        class="text-button"
+                        type="button"
+                        data-remove="love"
+                      >
+                        Удалить
+                      </button>
+                    </div>
+                  </div>
+                  <strong class="cart-item__price" data-line-price
+                    >3 560 ₽</strong
+                  >
+                </article>
+              </div>
+            </div>
+            <aside class="order-summary">
+              <h2>Ваш заказ</h2>
+              <dl>
+                <div>
+                  <dt data-summary-count>3 товара</dt>
+                  <dd data-subtotal></dd>
+                </div>
+                <div>
+                  <dt>Скидка</dt>
+                  <dd data-discount></dd>
+                </div>
+                <div>
+                  <dt>Доставка</dt>
+                  <dd data-shipping>Рассчитаем далее</dd>
+                </div>
+                <div class="order-summary__total">
+                  <dt>Итого</dt>
+                  <dd data-total></dd>
+                </div>
+              </dl>
+              <label class="field"
+                ><span>Промокод</span
+                ><input name="promo" data-promo placeholder="Введите промокод"
+              /></label>
+              <p class="field__message" data-promo-message></p>
+              <a class="button" href="checkout.html">Перейти к оформлению</a>
+            </aside>
+          </div>
+          <div class="empty-state" data-cart-empty hidden>
+            <h2>В корзине пока пусто</h2>
+            <p>Самое время найти что-то для себя.</p>
+            <a class="button" href="catalog.html">Перейти в каталог</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__support">
+            <a class="logo" href="index.html"
+              ><img src="img/logo.png" width="52" height="52" alt="Everglow"
+            /></a>
+            <p>Everglow. Мультибрендовый beauty-store</p>
+            <h2>Есть вопрос по заказу или подбору?</h2>
+            <p class="muted">
+              Напишите нам — поможем с выбором, доставкой и заказом.
+            </p>
+            <button
+              class="button"
+              type="button"
+              data-contact-open
+              aria-haspopup="dialog"
+            >
+              Связаться с нами
+            </button>
+          </div>
+          <nav class="footer__nav" aria-label="Навигация в подвале">
+            <details class="footer__group" open>
+              <summary>Магазин</summary>
+              <ul>
+                <li><a href="catalog.html?sort=new">Новинки</a></li>
+                <li><a href="catalog.html?badge=ХИТ">Бестселлеры</a></li>
+                <li><a href="brands.html">Бренды</a></li>
+                <li><a href="catalog.html?category=Наборы">Подарки</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>Помощь</summary>
+              <ul>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="delivery.html#payment">Оплата</a></li>
+                <li><a href="delivery.html#returns">Возврат</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>О нас</summary>
+              <ul>
+                <li><a href="contacts.html#showroom">О магазине</a></li>
+                <li><a href="journal.html">Медиа</a></li>
+                <li><a href="contacts.html">Вакансии</a></li>
+                <li><a href="contacts.html">Партнёрам</a></li>
+              </ul>
+            </details>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 EVERGLOW</p>
+          <div>
+            <button type="button" class="text-button" data-legal="privacy">
+              Политика конфиденциальности
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="offer">
+              Оферта
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="cookies">
+              Cookies
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="mobile-menu"
+      class="dialog dialog--menu"
+      aria-labelledby="menu-title"
+    >
+      <div class="dialog__header">
+        <h2 id="menu-title">Меню</h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-close
+          aria-label="Закрыть меню"
+        >
+          ×
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <a href="catalog.html">Каталог →</a><a href="brands.html">Бренды →</a
+        ><a href="catalog.html?sort=new">Новинки →</a
+        ><a href="catalog.html?category=Лицо">Уход →</a
+        ><a href="catalog.html?category=Макияж">Макияж →</a
+        ><a href="catalog.html?category=Парфюм">Парфюм →</a
+        ><a href="favorites.html">Избранное →</a
+        ><a href="login.html">Личный кабинет →</a
+        ><a href="journal.html">Журнал →</a
+        ><a href="contacts.html">Контакты →</a>
+      </nav>
+    </dialog>
+    <dialog
+      id="contact-dialog"
+      class="dialog dialog--contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="dialog__header">
+        <div>
+          <p class="eyebrow">EVERGLOW</p>
+          <h2 id="contact-title">Связаться с нами</h2>
+        </div>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть форму"
+        >
+          ×
+        </button>
+      </div>
+      <form class="form" data-contact-form>
+        <p class="muted">
+          Оставьте вопрос — консультант свяжется с вами в рабочее время.
+        </p>
+        <label class="field"
+          ><span>Имя</span
+          ><input
+            type="text"
+            name="name"
+            autocomplete="name"
+            required
+            minlength="2" /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Телефон</span
+          ><input
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            inputmode="tel"
+            required /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Вопрос</span
+          ><textarea name="question" rows="4" required minlength="5"></textarea
+          ><span class="field__message"></span></label
+        ><button class="button" type="submit">Отправить вопрос</button>
+        <p
+          class="form__status"
+          data-form-status
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </dialog>
+    <dialog id="message-dialog" class="dialog" aria-labelledby="message-title">
+      <div class="dialog__header">
+        <h2 id="message-title">Информация</h2>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+      </div>
+      <div data-message></div>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <noscript
+      ><p class="container notice">
+        Каталог доступен без JavaScript. Для интерактивных функций включите
+        JavaScript.
+      </p></noscript
+    >
+  </body>
+</html>

@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Карточка товара — EVERGLOW</title>
+    <meta
+      name="description"
+      content="Карточка товара — мультибрендовый магазин косметики Everglow"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="preload"
+      href="fonts/google-sans-variable.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <script defer src="libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="libs/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body data-page="product">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container">
+        <div class="header__bar">
+          <button
+            class="icon-button header__burger"
+            type="button"
+            data-open="mobile-menu"
+            aria-label="Открыть меню"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <img
+              class="icon"
+              src="img/menu.svg"
+              width="24"
+              height="24"
+              alt=""
+            /></button
+          ><a class="logo" href="index.html" aria-label="Everglow — главная"
+            ><img src="img/logo.png" alt="Everglow" width="52" height="52"
+          /></a>
+          <nav class="header__nav" aria-label="Основная навигация">
+            <a href="catalog.html">Каталог</a><a href="brands.html">Бренды</a
+            ><a href="catalog.html?sort=new">Новинки</a
+            ><a href="catalog.html?category=Лицо">Уход</a
+            ><a href="catalog.html?category=Макияж">Макияж</a
+            ><a href="catalog.html?category=Парфюм">Парфюм</a>
+          </nav>
+          <div class="header__actions">
+            <a class="icon-button" href="search.html" aria-label="Поиск"
+              ><img
+                class="icon"
+                src="img/search.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="favorites.html"
+              aria-label="Избранное"
+              ><img
+                class="icon"
+                src="img/heart.svg"
+                width="24"
+                height="24"
+                alt="" /><span
+                class="counter"
+                data-favorites-count
+                hidden
+              ></span></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="login.html"
+              aria-label="Личный кабинет"
+              ><img
+                class="icon"
+                src="img/user.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a class="icon-button" href="cart.html" aria-label="Корзина"
+              ><img
+                class="icon"
+                src="img/bag.svg"
+                width="24"
+                height="24"
+                alt="" /><span class="counter" data-cart-count hidden></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a> →
+          <a href="catalog.html?category=Лицо">Уход</a> →
+          <span data-pdp-brand>AXIS-Y</span>
+        </nav>
+        <section class="pdp" data-pdp="axis">
+          <div class="pdp__gallery">
+            <a
+              class="gallery-item"
+              href="img/placeholder-13.webp"
+              data-fancybox="product-gallery"
+              data-caption="Фотография товара"
+              ><img
+                class=""
+                src="img/placeholder-13.webp"
+                width="1600"
+                height="670"
+                alt="Фотография товара"
+                loading="lazy" /></a
+            ><a
+              class="gallery-item"
+              href="img/placeholder-14.webp"
+              data-fancybox="product-gallery"
+              data-caption="Фотография товара"
+              ><img
+                class=""
+                src="img/placeholder-14.webp"
+                width="1600"
+                height="670"
+                alt="Фотография товара"
+                loading="lazy"
+            /></a>
+            <article class="pdp__story">
+              <p class="eyebrow">МЯГКОЕ ОЧИЩЕНИЕ</p>
+              <h2>Баланс после умывания</h2>
+              <p>
+                Деликатное очищение как первый шаг рутины: без ощущения
+                перегруженности и с комфортным финишем после воды.
+              </p>
+            </article>
+            <a
+              class="gallery-item"
+              href="img/placeholder-07.webp"
+              data-fancybox="product-gallery"
+              data-caption="Детали товара"
+              ><img
+                class=""
+                src="img/placeholder-07.webp"
+                width="1600"
+                height="670"
+                alt="Детали товара"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="pdp__info">
+            <p class="eyebrow" data-pdp-brand>AXIS-Y</p>
+            <h1 data-pdp-title>
+              Quinoa One Step Balanced Gel Cleanser, 180 мл
+            </h1>
+            <div class="pdp__meta">
+              <a href="#reviews">★ 4.8 · 39 отзывов</a><span>Южная Корея</span>
+            </div>
+            <p class="stock">В наличии</p>
+            <div class="pdp__price" data-pdp-price>
+              <span class="price price--sale">1 478 ₽</span
+              ><del class="price__old">2 090 ₽</del>
+            </div>
+            <p data-pdp-description>
+              Мягкий очищающий гель для ежедневного умывания. Помогает удалить
+              загрязнения и остатки макияжа, сохраняя ощущение комфорта после
+              очищения.
+            </p>
+            <div class="chips">
+              <a class="chip" href="catalog.html?category=Для ежедневного ухода"
+                >Для ежедневного ухода</a
+              ><a class="chip" href="catalog.html?category=Мягкое очищение"
+                >Мягкое очищение</a
+              ><a class="chip" href="catalog.html?category=180 мл">180 мл</a>
+            </div>
+            <fieldset class="volume">
+              <legend>Объём</legend>
+              <label class="chip"
+                ><input type="radio" name="volume" value="180" checked />180
+                мл</label
+              >
+            </fieldset>
+            <div class="pdp__actions">
+              <div class="quantity" data-quantity="">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Уменьшить количество"
+                >
+                  −</button
+                ><input
+                  type="number"
+                  min="1"
+                  max="99"
+                  value="1"
+                  aria-label="Количество"
+                /><button
+                  type="button"
+                  data-step="1"
+                  aria-label="Увеличить количество"
+                >
+                  +
+                </button>
+              </div>
+              <button class="button" type="button" data-pdp-add data-add="axis">
+                В корзину</button
+              ><button
+                class="icon-button"
+                type="button"
+                data-pdp-favorite
+                data-favorite="axis"
+                aria-label="В избранное"
+                aria-pressed="false"
+              >
+                <img
+                  class="icon"
+                  src="img/heart.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
+              </button>
+            </div>
+            <p class="muted">4 платежа по 370 ₽ без переплаты</p>
+            <details class="accordion" open>
+              <summary>Описание</summary>
+              <p class="accordion__body">
+                Мягкий очищающий гель для ежедневного использования. Удаляет
+                загрязнения и остатки макияжа, помогая сохранить комфортное
+                ощущение после умывания.
+              </p>
+            </details>
+            <details class="accordion">
+              <summary>Состав</summary>
+              <p class="accordion__body">
+                Полный состав указан на упаковке товара. Уточните его у
+                консультанта перед покупкой.
+              </p>
+            </details>
+            <details class="accordion">
+              <summary>Применение</summary>
+              <p class="accordion__body">
+                Следуйте инструкции производителя на упаковке.
+              </p>
+            </details>
+          </div>
+        </section>
+      </div>
+      <section class="section section--tint">
+        <div class="container finder">
+          <div>
+            <p class="eyebrow">AXIS-Y / DAILY CARE</p>
+            <h2>K-beauty уход без лишних шагов</h2>
+            <p>
+              Ежедневное очищение задаёт тон всей рутине. Формула работает как
+              спокойная база: убрать загрязнения, освежить кожу и оставить
+              ощущение баланса.
+            </p>
+          </div>
+          <img
+            class="finder__image"
+            src="img/placeholder-14.webp"
+            width="1600"
+            height="670"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section class="section" id="reviews">
+        <div class="container">
+          <h2>Отзывы покупателей</h2>
+          <p class="muted">
+            Отзывы появятся после подключения каталога магазина.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div><h2>С этим товаром покупают</h2></div>
+          </div>
+          <div class="product-grid product-grid--four">
+            <article
+              class="product-card"
+              data-product="intrigue"
+              data-category="Волосы"
+              data-brand="KAMALI"
+              data-price="690"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=intrigue"
+                  aria-label="KAMALI Крем для волос INTRIGUE"
+                  ><img
+                    src="img/placeholder-05.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <span class="badge">НОВИНКА</span
+                ><button
+                  class="icon-button product-card__favorite"
+                  data-favorite="intrigue"
+                  type="button"
+                  aria-label="В избранное: Крем для волос INTRIGUE"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">KAMALI</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=intrigue">Крем для волос INTRIGUE</a>
+                </h3>
+                <p class="product-card__meta">Несмываемый уход · 250 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.8</span>
+                  <span class="muted">· 272</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">690 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="intrigue"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product="legend"
+              data-category="Тело"
+              data-brand="KAMALI"
+              data-price="690"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=legend"
+                  aria-label="KAMALI Мист для тела и волос LEGEND"
+                  ><img
+                    src="img/placeholder-06.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <button
+                  class="icon-button product-card__favorite"
+                  data-favorite="legend"
+                  type="button"
+                  aria-label="В избранное: Мист для тела и волос LEGEND"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">KAMALI</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=legend"
+                    >Мист для тела и волос LEGEND</a
+                  >
+                </h3>
+                <p class="product-card__meta">Мист · 250 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.8</span>
+                  <span class="muted">· 309</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">690 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="legend"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product="laneige"
+              data-category="Лицо"
+              data-brand="LANEIGE"
+              data-price="590"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=laneige"
+                  aria-label="LANEIGE Восстанавливающая и увлажняющая маска"
+                  ><img
+                    src="img/placeholder-07.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <span class="badge">ХИТ</span
+                ><button
+                  class="icon-button product-card__favorite"
+                  data-favorite="laneige"
+                  type="button"
+                  aria-label="В избранное: Восстанавливающая и увлажняющая маска"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">LANEIGE</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=laneige"
+                    >Восстанавливающая и увлажняющая маска</a
+                  >
+                </h3>
+                <p class="product-card__meta">Маска · 15 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.9</span>
+                  <span class="muted">· 346</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">590 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="laneige"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product="marvis"
+              data-category="Аксессуары"
+              data-brand="MARVIS"
+              data-price="490"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=marvis"
+                  aria-label="MARVIS Зубная паста «Мята и имбирь»"
+                  ><img
+                    src="img/placeholder-08.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <button
+                  class="icon-button product-card__favorite"
+                  data-favorite="marvis"
+                  type="button"
+                  aria-label="В избранное: Зубная паста «Мята и имбирь»"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">MARVIS</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=marvis"
+                    >Зубная паста «Мята и имбирь»</a
+                  >
+                </h3>
+                <p class="product-card__meta">Уход за полостью рта · 25 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.8</span>
+                  <span class="muted">· 383</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">490 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="marvis"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container services__grid">
+          <article class="service-card">
+            <span aria-hidden="true">✓</span>
+            <h2>Оригинальные товары</h2>
+            <p>Проверяем поставки и работаем с официальными каналами.</p>
+          </article>
+          <article class="service-card">
+            <span aria-hidden="true">↗</span>
+            <h2>Доставка по России</h2>
+            <p>Курьерские службы и пункты выдачи по всей стране.</p>
+          </article>
+          <article class="service-card">
+            <span aria-hidden="true">♡</span>
+            <h2>Поможем выбрать</h2>
+            <p>Подберём уход, аромат или подарок под вашу задачу.</p>
+          </article>
+          <article class="service-card">
+            <span aria-hidden="true">↶</span>
+            <h2>Удобный возврат</h2>
+            <p>Подскажем по возврату и обмену — без лишней бюрократии.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__support">
+            <a class="logo" href="index.html"
+              ><img src="img/logo.png" width="52" height="52" alt="Everglow"
+            /></a>
+            <p>Everglow. Мультибрендовый beauty-store</p>
+            <h2>Есть вопрос по заказу или подбору?</h2>
+            <p class="muted">
+              Напишите нам — поможем с выбором, доставкой и заказом.
+            </p>
+            <button
+              class="button"
+              type="button"
+              data-contact-open
+              aria-haspopup="dialog"
+            >
+              Связаться с нами
+            </button>
+          </div>
+          <nav class="footer__nav" aria-label="Навигация в подвале">
+            <details class="footer__group" open>
+              <summary>Магазин</summary>
+              <ul>
+                <li><a href="catalog.html?sort=new">Новинки</a></li>
+                <li><a href="catalog.html?badge=ХИТ">Бестселлеры</a></li>
+                <li><a href="brands.html">Бренды</a></li>
+                <li><a href="catalog.html?category=Наборы">Подарки</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>Помощь</summary>
+              <ul>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="delivery.html#payment">Оплата</a></li>
+                <li><a href="delivery.html#returns">Возврат</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>О нас</summary>
+              <ul>
+                <li><a href="contacts.html#showroom">О магазине</a></li>
+                <li><a href="journal.html">Медиа</a></li>
+                <li><a href="contacts.html">Вакансии</a></li>
+                <li><a href="contacts.html">Партнёрам</a></li>
+              </ul>
+            </details>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 EVERGLOW</p>
+          <div>
+            <button type="button" class="text-button" data-legal="privacy">
+              Политика конфиденциальности
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="offer">
+              Оферта
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="cookies">
+              Cookies
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="mobile-menu"
+      class="dialog dialog--menu"
+      aria-labelledby="menu-title"
+    >
+      <div class="dialog__header">
+        <h2 id="menu-title">Меню</h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-close
+          aria-label="Закрыть меню"
+        >
+          ×
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <a href="catalog.html">Каталог →</a><a href="brands.html">Бренды →</a
+        ><a href="catalog.html?sort=new">Новинки →</a
+        ><a href="catalog.html?category=Лицо">Уход →</a
+        ><a href="catalog.html?category=Макияж">Макияж →</a
+        ><a href="catalog.html?category=Парфюм">Парфюм →</a
+        ><a href="favorites.html">Избранное →</a
+        ><a href="login.html">Личный кабинет →</a
+        ><a href="journal.html">Журнал →</a
+        ><a href="contacts.html">Контакты →</a>
+      </nav>
+    </dialog>
+    <dialog
+      id="contact-dialog"
+      class="dialog dialog--contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="dialog__header">
+        <div>
+          <p class="eyebrow">EVERGLOW</p>
+          <h2 id="contact-title">Связаться с нами</h2>
+        </div>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть форму"
+        >
+          ×
+        </button>
+      </div>
+      <form class="form" data-contact-form>
+        <p class="muted">
+          Оставьте вопрос — консультант свяжется с вами в рабочее время.
+        </p>
+        <label class="field"
+          ><span>Имя</span
+          ><input
+            type="text"
+            name="name"
+            autocomplete="name"
+            required
+            minlength="2" /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Телефон</span
+          ><input
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            inputmode="tel"
+            required /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Вопрос</span
+          ><textarea name="question" rows="4" required minlength="5"></textarea
+          ><span class="field__message"></span></label
+        ><button class="button" type="submit">Отправить вопрос</button>
+        <p
+          class="form__status"
+          data-form-status
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </dialog>
+    <dialog id="message-dialog" class="dialog" aria-labelledby="message-title">
+      <div class="dialog__header">
+        <h2 id="message-title">Информация</h2>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+      </div>
+      <div data-message></div>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <noscript
+      ><p class="container notice">
+        Каталог доступен без JavaScript. Для интерактивных функций включите
+        JavaScript.
+      </p></noscript
+    >
+  </body>
+</html>

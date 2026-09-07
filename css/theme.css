@@ -1,0 +1,809 @@
+/* EVERGLOW production layer: Figma palette + restrained commerce interactions. */
+@font-face {
+  font-family: "Google Sans";
+  src:
+    url("../fonts/google-sans-variable.woff") format("woff"),
+    url("../fonts/google-sans-variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --text: #292426;
+  --muted: #736b6e;
+  --base: #f9f6f3;
+  --surface: #fff;
+  --border: #d8d0c9;
+  --sale: #7d3d4f;
+  --accent: #eef8e2;
+  --focus: #716438;
+  --shadow: 0 0.75rem 2.25rem rgba(41, 36, 38, 0.1);
+  --transition: 240ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+body {
+  font-family: "Google Sans", Manrope, Arial, sans-serif;
+  color: var(--text);
+  background: var(--surface);
+}
+h1,
+h2,
+h3 {
+  font-family: "Google Sans", Manrope, Arial, sans-serif;
+}
+.section--tint,
+.page-intro,
+.listing,
+.services,
+.footer {
+  background: var(--base);
+}
+.header:not(.header--overlay) {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+}
+
+/* A 1px underline keeps the Figma typography light and avoids noisy hover states. */
+header a:not(.button):not(.icon-button):not(.logo),
+footer a:not(.button):not(.icon-button):not(.logo),
+.breadcrumbs a,
+.mobile-menu a,
+.text-link,
+.product-card__title a,
+.pdp__meta a,
+.contact-cards a,
+.account-nav a,
+.order-row a,
+.article-body a,
+.page-intro__text a {
+  position: relative;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+header a:not(.button):not(.icon-button):not(.logo)::after,
+footer a:not(.button):not(.icon-button):not(.logo)::after,
+.breadcrumbs a::after,
+.mobile-menu a::after,
+.text-link::after,
+.product-card__title a::after,
+.pdp__meta a::after,
+.contact-cards a::after,
+.account-nav a::after,
+.order-row a::after,
+.article-body a::after,
+.page-intro__text a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -0.14rem;
+  height: 1px;
+  border-radius: 1px;
+  background: currentColor;
+  transition: right var(--transition);
+}
+header a:hover::after,
+footer a:hover::after,
+.breadcrumbs a:hover::after,
+.mobile-menu a:hover::after,
+.text-link:hover::after,
+.product-card__title a:hover::after,
+.pdp__meta a:hover::after,
+.contact-cards a:hover::after,
+.account-nav a:hover::after,
+.order-row a:hover::after,
+.article-body a:hover::after,
+.page-intro__text a:hover::after {
+  right: 0;
+}
+header a:hover,
+footer a:hover,
+.breadcrumbs a:hover,
+.mobile-menu a:hover,
+.text-link:hover,
+.product-card__title a:hover,
+.pdp__meta a:hover,
+.contact-cards a:hover,
+.account-nav a:hover,
+.order-row a:hover,
+.article-body a:hover,
+.page-intro__text a:hover {
+  color: var(--sale);
+}
+.header--overlay a:hover {
+  color: #fff;
+}
+.header--overlay a::after {
+  background: #fff;
+}
+
+/* Buttons, icons and cards share one easing curve and one visual weight. */
+.button {
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+.button:hover {
+  box-shadow: none;
+}
+.button:active {
+  box-shadow: none;
+}
+.button--secondary:hover,
+.button--white:hover {
+  background: var(--text);
+  border-color: var(--text);
+  color: #fff;
+}
+.button--inverse:hover {
+  background: #fff;
+  color: var(--text);
+  border-color: #fff;
+}
+.icon-button {
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+.icon-button:hover {
+  background: #e9e3de;
+}
+.icon-button[aria-pressed="true"] {
+  background: #ead6dd;
+  color: var(--sale);
+}
+.chip {
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+.chip:hover,
+.chip[aria-pressed="true"] {
+  background: var(--text);
+  border-color: var(--text);
+  color: #fff;
+}
+.product-card__media {
+  transition:
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+.product-card:hover .product-card__media {
+  border-color: #c8beb7;
+  box-shadow: var(--shadow);
+}
+.product-card__media:hover > a img {
+  transform: scale(1.025);
+}
+.service-card,
+.brand-card {
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+.service-card:hover,
+.brand-card:hover {
+  background: #fff;
+  border-color: #c8beb7;
+  box-shadow: none;
+}
+.campaign--dark {
+  background: #292426;
+}
+.status,
+.notice,
+.success-mark {
+  background: var(--accent);
+}
+
+/* Native controls are replaced with small CSS icons so every state is consistent. */
+.checkbox input,
+.choice input,
+.volume input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
+  margin: 0.12rem 0 0;
+  border: 1px solid #bfb5ae;
+  background: #fff;
+  box-shadow: inset 0 0 0 0 var(--text);
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+.checkbox input {
+  border-radius: 0.35rem;
+}
+.checkbox input::after {
+  content: "";
+  position: absolute;
+  left: 0.34rem;
+  top: 0.12rem;
+  width: 0.34rem;
+  height: 0.62rem;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform var(--transition);
+}
+.checkbox input:checked {
+  background: var(--text);
+  border-color: var(--text);
+  box-shadow: 0 0.15rem 0.4rem rgba(41, 36, 38, 0.18);
+}
+.checkbox input:checked::after {
+  transform: rotate(45deg) scale(1);
+}
+.choice input,
+.volume input {
+  border-radius: 50%;
+}
+.choice input::after,
+.volume input::after {
+  content: "";
+  position: absolute;
+  inset: 0.3rem;
+  border-radius: 50%;
+  background: #fff;
+  transform: scale(0);
+  transition: transform var(--transition);
+}
+.choice input:checked,
+.volume input:checked {
+  background: var(--text);
+  border-color: var(--text);
+}
+.choice input:checked::after,
+.volume input:checked::after {
+  transform: scale(1);
+}
+.checkbox input:focus-visible,
+.choice input:focus-visible,
+.volume input:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.choice:has(input:checked) {
+  border-color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--text);
+}
+.volume .chip {
+  gap: 0.55rem;
+}
+
+/* Equal left/right select breathing room; the chevron is a CSS icon, not a browser default. */
+.sort {
+  position: relative;
+}
+.sort select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-inline: 1rem 3rem;
+  background: #fff;
+}
+.sort::after {
+  content: "";
+  position: absolute;
+  right: 1.1rem;
+  bottom: 1.05rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+  pointer-events: none;
+  transition:
+    transform var(--transition),
+    color var(--transition);
+}
+.sort:focus-within::after {
+  color: var(--sale);
+  transform: rotate(45deg);
+}
+
+/* Production slider structure. Swiper handles touch, keyboard and resize lifecycle. */
+.hero-slider {
+  overflow: hidden;
+}
+.hero-slider .hero__slides {
+  height: 100%;
+}
+.hero-slider .hero__slide {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.hero-slider:not(.swiper-initialized) .hero__slide[aria-hidden="true"] {
+  visibility: hidden;
+}
+.hero-slider .hero__slide[aria-hidden="false"] {
+  visibility: visible;
+}
+.hero-slider .swiper-button-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.hero-slider .hero__control-bar .icon-button {
+  color: var(--text);
+  background: #fff;
+}
+.hero-slider .hero__control-bar .icon-button:hover {
+  background: #e9e3de;
+}
+.hero-slider .hero__progress {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.hero-slider .hero__progress > span {
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Small reveal used only for content already present in the DOM. */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.48s ease var(--reveal-delay, 0ms);
+}
+.reveal--visible {
+  opacity: 1;
+}
+
+.field input,
+.field textarea,
+.sort select {
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background-color var(--transition);
+}
+.field input:focus,
+.field textarea:focus,
+.sort select:focus {
+  border-color: #8a7b72;
+  box-shadow: 0 0 0 3px rgba(113, 100, 56, 0.15);
+  outline: none;
+}
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: #a32036;
+  box-shadow: 0 0 0 3px rgba(163, 32, 54, 0.1);
+}
+.dialog {
+  box-shadow: 0 1rem 3rem rgba(41, 36, 38, 0.22);
+}
+.dialog::backdrop {
+  background: rgba(41, 36, 38, 0.58);
+  backdrop-filter: blur(3px);
+}
+.dialog--contact .form__status {
+  min-height: 1.4em;
+  color: #4e6e37;
+  font-size: 0.875rem;
+}
+.fancybox__backdrop {
+  background: rgba(41, 36, 38, 0.82);
+}
+.fancybox__container {
+  --fancybox-bg: rgba(41, 36, 38, 0.92);
+}
+
+@media (max-width: 767px) {
+  .sort select {
+    padding-inline: 1rem 3rem;
+  }
+  .sort::after {
+    right: 1.05rem;
+  }
+  .hero__control-bar .icon-button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transition: none;
+  }
+  .hero-slider .hero__progress > span {
+    transition: none;
+  }
+}
+
+/* V1 refinement layer: one motion language, stable layout, and strict contrast. */
+body,
+body button,
+body input,
+body select,
+body textarea,
+body label,
+body summary,
+body p,
+body a,
+body span,
+body li,
+body dt,
+body dd,
+body strong,
+body small {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+.header,
+.header--overlay {
+  position: sticky;
+  top: 0;
+  inset-inline: 0;
+  z-index: 40;
+  background: rgba(255, 255, 255, 0.97);
+  color: var(--text);
+  backdrop-filter: blur(10px);
+}
+
+.header--overlay {
+  inset-block-start: 0;
+  margin-bottom: -7rem;
+  background: transparent;
+  color: #fff;
+  backdrop-filter: none;
+}
+
+.header--overlay .header__bar {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(5px);
+}
+
+.header--overlay .icon-button {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.header--overlay .icon {
+  filter: brightness(0) invert(1);
+}
+
+.header--overlay a:hover {
+  color: #fff;
+}
+
+.header--overlay.header--scrolled {
+  background: rgba(255, 255, 255, 0.97);
+  color: var(--text);
+  backdrop-filter: blur(10px);
+}
+
+.header--overlay.header--scrolled .header__bar {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: var(--border);
+  backdrop-filter: none;
+}
+
+.header--overlay.header--scrolled .icon-button {
+  background: var(--base);
+}
+
+.header--overlay.header--scrolled .icon {
+  filter: brightness(0);
+}
+
+.header--overlay.header--scrolled a:hover {
+  color: var(--sale);
+}
+
+.header--overlay a::after {
+  background: currentColor;
+}
+
+.header--overlay.header--scrolled .icon-button:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+.header__nav {
+  font-weight: 400;
+}
+
+.header__nav a,
+.header__actions a,
+.header__burger,
+.mobile-menu a,
+.breadcrumbs a,
+.footer__nav a,
+.footer__group > summary,
+.pagination button,
+.account-nav a,
+.account-nav button,
+.button,
+.chip,
+.badge,
+.text-link,
+.text-button,
+.alphabet button,
+.sort select,
+.filters-toggle,
+.icon-button {
+  line-height: 1;
+}
+
+nav,
+nav *,
+button,
+.chip,
+.badge,
+.text-link,
+.text-button {
+  line-height: 1;
+}
+
+header a:not(.button):not(.icon-button):not(.logo) {
+  transition: color var(--transition);
+}
+
+header a:not(.button):not(.icon-button):not(.logo)::after {
+  bottom: -0.35rem;
+  height: 1px;
+  right: 100%;
+  transition: right var(--transition);
+}
+
+header a:not(.button):not(.icon-button):not(.logo):hover::after {
+  right: 0;
+}
+
+.button,
+.chip,
+.icon-button,
+.service-card,
+.brand-card,
+.product-card__media {
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition),
+    opacity var(--transition),
+    box-shadow var(--transition);
+}
+
+.button:hover,
+.icon-button:hover,
+.chip:hover,
+.service-card:hover,
+.brand-card:hover,
+.product-card:hover .product-card__media {
+  transform: none;
+  box-shadow: none;
+}
+
+.button,
+.chip,
+.badge,
+.text-link,
+.text-button,
+.eyebrow,
+.footer__group > summary,
+.price {
+  font-weight: 400;
+}
+
+.button--secondary:hover,
+.button--white:hover {
+  background: var(--sale);
+  border-color: var(--sale);
+  color: #fff;
+}
+
+.button--inverse:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--text);
+}
+
+.icon-button:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+.icon-button:hover .icon,
+.icon-button[aria-pressed="true"] .icon {
+  filter: brightness(0) invert(1);
+}
+
+.chip {
+  min-height: 2.25rem;
+  padding-block: 0.35rem;
+  border-radius: 0.45rem;
+}
+
+.chip:hover,
+.chip[aria-pressed="true"] {
+  background: var(--text);
+  border-color: var(--text);
+  color: #fff;
+}
+
+.campaign--dark .chip {
+  background: #fff;
+  border-color: #fff;
+  color: var(--text);
+}
+
+.campaign--dark .chip:hover,
+.campaign--dark .chip[aria-pressed="true"] {
+  background: var(--sale);
+  border-color: var(--sale);
+  color: #fff;
+}
+
+.editorial-card,
+.editorial-card:hover {
+  color: #fff;
+}
+
+.editorial-card h3 {
+  color: #fff;
+  transition: color var(--transition);
+}
+
+.editorial-card:hover h3 {
+  color: var(--accent);
+}
+
+.editorial-card .eyebrow,
+.editorial-card:hover .eyebrow {
+  color: #fff;
+}
+
+.reveal {
+  transform: none;
+  transition: opacity 0.48s ease var(--reveal-delay, 0ms);
+}
+
+.sort:focus-within::after {
+  transform: rotate(45deg);
+}
+
+.hero-slider .hero__control-bar .icon-button:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+.hero-slider .hero__control-bar .icon-button:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+.hero-slider.slider--native .swiper-wrapper {
+  display: block;
+  height: 100%;
+}
+
+.hero-slider.slider--native .swiper-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.65s ease,
+    visibility 0.65s ease;
+}
+
+.hero-slider.slider--native .swiper-slide[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Figma geometry: 980px hero at 1920px and 820px at 1440px. */
+.hero {
+  height: clamp(40rem, calc(33.333vw + 21.25rem), 61.25rem);
+}
+
+/* Catalog uses three 328px cards at 1440px and four 320px cards at 1920px. */
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .header {
+    height: 6.5rem;
+  }
+
+  .header__bar {
+    top: 0.875rem;
+  }
+
+  .header--overlay {
+    margin-bottom: -6.5rem;
+  }
+
+  .catalog-layout {
+    grid-template-columns: 17.5rem minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .product-grid--catalog {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+body[data-page="catalog"] .page-intro {
+  background: var(--surface);
+}
+
+.product-grid--catalog .product-card__media img:not(.icon) {
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: var(--surface);
+}
+
+body[data-page="product"] main {
+  background: var(--base);
+}
+
+.gallery-item,
+.pdp__story {
+  border-radius: 1.125rem;
+}
+
+.gallery-item img {
+  object-fit: contain;
+  background: var(--surface);
+}
+
+@media (max-width: 767px) {
+  .header--overlay {
+    margin-bottom: -5.5rem;
+  }
+
+  .header__bar {
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .header--overlay {
+    margin-bottom: -6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .editorial-card h3,
+  .hero-slider.slider--native .swiper-slide {
+    transition: none;
+  }
+}
+
+/* Keep the requested type scale deterministic even where component CSS has a legacy weight. */
+body * {
+  font-weight: 400 !important;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-weight: 500 !important;
+}

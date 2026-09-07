@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DAVINES — EVERGLOW</title>
+    <meta
+      name="description"
+      content="DAVINES — мультибрендовый магазин косметики Everglow"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="preload"
+      href="fonts/google-sans-variable.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <script defer src="libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="libs/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body data-page="brand">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container">
+        <div class="header__bar">
+          <button
+            class="icon-button header__burger"
+            type="button"
+            data-open="mobile-menu"
+            aria-label="Открыть меню"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <img
+              class="icon"
+              src="img/menu.svg"
+              width="24"
+              height="24"
+              alt=""
+            /></button
+          ><a class="logo" href="index.html" aria-label="Everglow — главная"
+            ><img src="img/logo.png" alt="Everglow" width="52" height="52"
+          /></a>
+          <nav class="header__nav" aria-label="Основная навигация">
+            <a href="catalog.html">Каталог</a><a href="brands.html">Бренды</a
+            ><a href="catalog.html?sort=new">Новинки</a
+            ><a href="catalog.html?category=Лицо">Уход</a
+            ><a href="catalog.html?category=Макияж">Макияж</a
+            ><a href="catalog.html?category=Парфюм">Парфюм</a>
+          </nav>
+          <div class="header__actions">
+            <a class="icon-button" href="search.html" aria-label="Поиск"
+              ><img
+                class="icon"
+                src="img/search.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="favorites.html"
+              aria-label="Избранное"
+              ><img
+                class="icon"
+                src="img/heart.svg"
+                width="24"
+                height="24"
+                alt="" /><span
+                class="counter"
+                data-favorites-count
+                hidden
+              ></span></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="login.html"
+              aria-label="Личный кабинет"
+              ><img
+                class="icon"
+                src="img/user.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a class="icon-button" href="cart.html" aria-label="Корзина"
+              ><img
+                class="icon"
+                src="img/bag.svg"
+                width="24"
+                height="24"
+                alt="" /><span class="counter" data-cart-count hidden></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro page-intro--brand">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a><span aria-hidden="true">→</span
+            ><span aria-current="page">DAVINES</span>
+          </nav>
+          <h1>DAVINES</h1>
+          <p class="page-intro__text">
+            Профессиональный уход за волосами из Италии — формулы, которые
+            сочетают эффективность, сенсорность и ответственное производство.
+          </p>
+          <div class="chips">
+            <a class="chip" href="catalog.html?category=Шампуни">Шампуни</a
+            ><a class="chip" href="catalog.html?category=Кондиционеры"
+              >Кондиционеры</a
+            ><a class="chip" href="catalog.html?category=Маски">Маски</a
+            ><a class="chip" href="catalog.html?category=Стайлинг">Стайлинг</a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <h2>Выбор Everglow</h2>
+              <p class="muted">Популярные продукты бренда</p>
+            </div>
+          </div>
+          <div class="product-grid product-grid--four" data-brand-products>
+            <article
+              class="product-card"
+              data-product="minu"
+              data-category="Волосы"
+              data-brand="DAVINES"
+              data-price="5100"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=minu"
+                  aria-label="DAVINES MINU Маска для волос"
+                  ><img
+                    src="img/placeholder-10.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <span class="badge">ХИТ</span
+                ><button
+                  class="icon-button product-card__favorite"
+                  data-favorite="minu"
+                  type="button"
+                  aria-label="В избранное: MINU Маска для волос"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">DAVINES</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=minu">MINU Маска для волос</a>
+                </h3>
+                <p class="product-card__meta">Маска · 250 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.9</span>
+                  <span class="muted">· 457</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">5 100 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="minu"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product="love"
+              data-category="Волосы"
+              data-brand="DAVINES"
+              data-price="3560"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=love"
+                  aria-label="DAVINES LOVE smoothing Шампунь"
+                  ><img
+                    src="img/placeholder-11.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <button
+                  class="icon-button product-card__favorite"
+                  data-favorite="love"
+                  type="button"
+                  aria-label="В избранное: LOVE smoothing Шампунь"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">DAVINES</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=love">LOVE smoothing Шампунь</a>
+                </h3>
+                <p class="product-card__meta">Шампунь · 250 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.8</span>
+                  <span class="muted">· 494</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">3 560 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="love"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product="oi"
+              data-category="Волосы"
+              data-brand="DAVINES"
+              data-price="7240"
+            >
+              <div class="product-card__media">
+                <a
+                  href="product.html?id=oi"
+                  aria-label="DAVINES OI All in One Milk"
+                  ><img
+                    src="img/placeholder-15.webp"
+                    width="408"
+                    height="485"
+                    loading="lazy"
+                    alt=""
+                /></a>
+                <span class="badge">ХИТ</span
+                ><button
+                  class="icon-button product-card__favorite"
+                  data-favorite="oi"
+                  type="button"
+                  aria-label="В избранное: OI All in One Milk"
+                  aria-pressed="false"
+                >
+                  <img
+                    class="icon"
+                    src="img/heart.svg"
+                    width="24"
+                    height="24"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="product-card__content">
+                <p class="product-card__brand">DAVINES</p>
+                <h3 class="product-card__title">
+                  <a href="product.html?id=oi">OI All in One Milk</a>
+                </h3>
+                <p class="product-card__meta">Несмываемое молочко · 135 мл</p>
+                <p class="rating">
+                  <span aria-label="Рейтинг">★ 4.8</span>
+                  <span class="muted">· 642</span>
+                </p>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">
+                  <span class="price">7 240 ₽</span>
+                </div>
+                <button
+                  class="button button--small button--secondary"
+                  type="button"
+                  data-add="oi"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section--tint">
+        <div class="container finder">
+          <div>
+            <h2>О бренде</h2>
+            <p data-brand-story>
+              Davines родился как исследовательская лаборатория и вырос в
+              международный бренд профессиональной косметики для волос. В центре
+              подхода — качество формул, дизайн и ответственное отношение к
+              производству.
+            </p>
+          </div>
+          <div>
+            <h2 data-brand-why>Почему мы выбрали DAVINES</h2>
+            <ul class="text-list">
+              <li>Профессиональные формулы</li>
+              <li>Выразительные ароматы и текстуры</li>
+              <li>Линейки для разных типов волос</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__support">
+            <a class="logo" href="index.html"
+              ><img src="img/logo.png" width="52" height="52" alt="Everglow"
+            /></a>
+            <p>Everglow. Мультибрендовый beauty-store</p>
+            <h2>Есть вопрос по заказу или подбору?</h2>
+            <p class="muted">
+              Напишите нам — поможем с выбором, доставкой и заказом.
+            </p>
+            <button
+              class="button"
+              type="button"
+              data-contact-open
+              aria-haspopup="dialog"
+            >
+              Связаться с нами
+            </button>
+          </div>
+          <nav class="footer__nav" aria-label="Навигация в подвале">
+            <details class="footer__group" open>
+              <summary>Магазин</summary>
+              <ul>
+                <li><a href="catalog.html?sort=new">Новинки</a></li>
+                <li><a href="catalog.html?badge=ХИТ">Бестселлеры</a></li>
+                <li><a href="brands.html">Бренды</a></li>
+                <li><a href="catalog.html?category=Наборы">Подарки</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>Помощь</summary>
+              <ul>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="delivery.html#payment">Оплата</a></li>
+                <li><a href="delivery.html#returns">Возврат</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>О нас</summary>
+              <ul>
+                <li><a href="contacts.html#showroom">О магазине</a></li>
+                <li><a href="journal.html">Медиа</a></li>
+                <li><a href="contacts.html">Вакансии</a></li>
+                <li><a href="contacts.html">Партнёрам</a></li>
+              </ul>
+            </details>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 EVERGLOW</p>
+          <div>
+            <button type="button" class="text-button" data-legal="privacy">
+              Политика конфиденциальности
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="offer">
+              Оферта
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="cookies">
+              Cookies
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="mobile-menu"
+      class="dialog dialog--menu"
+      aria-labelledby="menu-title"
+    >
+      <div class="dialog__header">
+        <h2 id="menu-title">Меню</h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-close
+          aria-label="Закрыть меню"
+        >
+          ×
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <a href="catalog.html">Каталог →</a><a href="brands.html">Бренды →</a
+        ><a href="catalog.html?sort=new">Новинки →</a
+        ><a href="catalog.html?category=Лицо">Уход →</a
+        ><a href="catalog.html?category=Макияж">Макияж →</a
+        ><a href="catalog.html?category=Парфюм">Парфюм →</a
+        ><a href="favorites.html">Избранное →</a
+        ><a href="login.html">Личный кабинет →</a
+        ><a href="journal.html">Журнал →</a
+        ><a href="contacts.html">Контакты →</a>
+      </nav>
+    </dialog>
+    <dialog
+      id="contact-dialog"
+      class="dialog dialog--contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="dialog__header">
+        <div>
+          <p class="eyebrow">EVERGLOW</p>
+          <h2 id="contact-title">Связаться с нами</h2>
+        </div>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть форму"
+        >
+          ×
+        </button>
+      </div>
+      <form class="form" data-contact-form>
+        <p class="muted">
+          Оставьте вопрос — консультант свяжется с вами в рабочее время.
+        </p>
+        <label class="field"
+          ><span>Имя</span
+          ><input
+            type="text"
+            name="name"
+            autocomplete="name"
+            required
+            minlength="2" /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Телефон</span
+          ><input
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            inputmode="tel"
+            required /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Вопрос</span
+          ><textarea name="question" rows="4" required minlength="5"></textarea
+          ><span class="field__message"></span></label
+        ><button class="button" type="submit">Отправить вопрос</button>
+        <p
+          class="form__status"
+          data-form-status
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </dialog>
+    <dialog id="message-dialog" class="dialog" aria-labelledby="message-title">
+      <div class="dialog__header">
+        <h2 id="message-title">Информация</h2>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+      </div>
+      <div data-message></div>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <noscript
+      ><p class="container notice">
+        Каталог доступен без JavaScript. Для интерактивных функций включите
+        JavaScript.
+      </p></noscript
+    >
+  </body>
+</html>

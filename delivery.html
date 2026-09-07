@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Доставка и оплата — EVERGLOW</title>
+    <meta
+      name="description"
+      content="Доставка и оплата — мультибрендовый магазин косметики Everglow"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="preload"
+      href="fonts/google-sans-variable.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <script defer src="libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="libs/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body data-page="delivery">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container">
+        <div class="header__bar">
+          <button
+            class="icon-button header__burger"
+            type="button"
+            data-open="mobile-menu"
+            aria-label="Открыть меню"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <img
+              class="icon"
+              src="img/menu.svg"
+              width="24"
+              height="24"
+              alt=""
+            /></button
+          ><a class="logo" href="index.html" aria-label="Everglow — главная"
+            ><img src="img/logo.png" alt="Everglow" width="52" height="52"
+          /></a>
+          <nav class="header__nav" aria-label="Основная навигация">
+            <a href="catalog.html">Каталог</a><a href="brands.html">Бренды</a
+            ><a href="catalog.html?sort=new">Новинки</a
+            ><a href="catalog.html?category=Лицо">Уход</a
+            ><a href="catalog.html?category=Макияж">Макияж</a
+            ><a href="catalog.html?category=Парфюм">Парфюм</a>
+          </nav>
+          <div class="header__actions">
+            <a class="icon-button" href="search.html" aria-label="Поиск"
+              ><img
+                class="icon"
+                src="img/search.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="favorites.html"
+              aria-label="Избранное"
+              ><img
+                class="icon"
+                src="img/heart.svg"
+                width="24"
+                height="24"
+                alt="" /><span
+                class="counter"
+                data-favorites-count
+                hidden
+              ></span></a
+            ><a
+              class="icon-button header__desktop-action"
+              href="login.html"
+              aria-label="Личный кабинет"
+              ><img
+                class="icon"
+                src="img/user.svg"
+                width="24"
+                height="24"
+                alt="" /></a
+            ><a class="icon-button" href="cart.html" aria-label="Корзина"
+              ><img
+                class="icon"
+                src="img/bag.svg"
+                width="24"
+                height="24"
+                alt="" /><span class="counter" data-cart-count hidden></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a><span aria-hidden="true">→</span
+            ><span aria-current="page">Доставка и оплата</span>
+          </nav>
+          <h1>Доставка и оплата</h1>
+          <p class="page-intro__text">
+            Прозрачные условия, понятные сроки и удобные способы оплаты.
+          </p>
+        </div>
+      </section>
+      <section class="section section--compact">
+        <div class="container">
+          <h2>Доставка</h2>
+          <div class="info-grid">
+            <article class="panel">
+              <h3>Курьером</h3>
+              <p>от 390 ₽</p>
+              <p class="muted">1–2 дня по Москве</p>
+            </article>
+            <article class="panel">
+              <h3>Пункт выдачи</h3>
+              <p>от 190 ₽</p>
+              <p class="muted">СДЭК и партнёрские ПВЗ</p>
+            </article>
+            <article class="panel">
+              <h3>По России</h3>
+              <p>Рассчитывается</p>
+              <p class="muted">Срок зависит от региона</p>
+            </article>
+          </div>
+          <h2 id="payment">Оплата</h2>
+          <div class="info-grid">
+            <article class="panel">
+              <h3>Банковская карта</h3>
+              <p>Visa · Mastercard · Мир</p>
+            </article>
+            <article class="panel">
+              <h3>СБП</h3>
+              <p>Оплата по QR-коду</p>
+            </article>
+            <article class="panel">
+              <h3>Онлайн</h3>
+              <p>Платёж проходит на защищённой странице</p>
+            </article>
+          </div>
+          <h2>Частые вопросы</h2>
+          <details class="accordion" open>
+            <summary>Когда передадут заказ в доставку?</summary>
+            <p class="accordion__body">
+              Заказы, оформленные до 16:00, обычно передаём в службу доставки на
+              следующий рабочий день. После передачи отправим уведомление и
+              номер для отслеживания.
+            </p>
+          </details>
+          <details class="accordion">
+            <summary>Можно ли изменить адрес после оформления?</summary>
+            <p class="accordion__body">
+              Свяжитесь с нами, чтобы уточнить возможность изменения адреса до
+              передачи заказа в доставку.
+            </p>
+          </details>
+          <details class="accordion">
+            <summary>Как получить бесплатную доставку?</summary>
+            <p class="accordion__body">
+              Актуальную стоимость доставки уточнит консультант при
+              подтверждении заказа.
+            </p>
+          </details>
+          <details class="accordion" id="returns">
+            <summary>Как вернуть товар?</summary>
+            <p class="accordion__body">
+              Напишите нам с номером заказа — мы подскажем порядок возврата и
+              необходимые действия.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__support">
+            <a class="logo" href="index.html"
+              ><img src="img/logo.png" width="52" height="52" alt="Everglow"
+            /></a>
+            <p>Everglow. Мультибрендовый beauty-store</p>
+            <h2>Есть вопрос по заказу или подбору?</h2>
+            <p class="muted">
+              Напишите нам — поможем с выбором, доставкой и заказом.
+            </p>
+            <button
+              class="button"
+              type="button"
+              data-contact-open
+              aria-haspopup="dialog"
+            >
+              Связаться с нами
+            </button>
+          </div>
+          <nav class="footer__nav" aria-label="Навигация в подвале">
+            <details class="footer__group" open>
+              <summary>Магазин</summary>
+              <ul>
+                <li><a href="catalog.html?sort=new">Новинки</a></li>
+                <li><a href="catalog.html?badge=ХИТ">Бестселлеры</a></li>
+                <li><a href="brands.html">Бренды</a></li>
+                <li><a href="catalog.html?category=Наборы">Подарки</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>Помощь</summary>
+              <ul>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="delivery.html#payment">Оплата</a></li>
+                <li><a href="delivery.html#returns">Возврат</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </details>
+            <details class="footer__group" open>
+              <summary>О нас</summary>
+              <ul>
+                <li><a href="contacts.html#showroom">О магазине</a></li>
+                <li><a href="journal.html">Медиа</a></li>
+                <li><a href="contacts.html">Вакансии</a></li>
+                <li><a href="contacts.html">Партнёрам</a></li>
+              </ul>
+            </details>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 EVERGLOW</p>
+          <div>
+            <button type="button" class="text-button" data-legal="privacy">
+              Политика конфиденциальности
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="offer">
+              Оферта
+            </button>
+            ·
+            <button type="button" class="text-button" data-legal="cookies">
+              Cookies
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="mobile-menu"
+      class="dialog dialog--menu"
+      aria-labelledby="menu-title"
+    >
+      <div class="dialog__header">
+        <h2 id="menu-title">Меню</h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-close
+          aria-label="Закрыть меню"
+        >
+          ×
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <a href="catalog.html">Каталог →</a><a href="brands.html">Бренды →</a
+        ><a href="catalog.html?sort=new">Новинки →</a
+        ><a href="catalog.html?category=Лицо">Уход →</a
+        ><a href="catalog.html?category=Макияж">Макияж →</a
+        ><a href="catalog.html?category=Парфюм">Парфюм →</a
+        ><a href="favorites.html">Избранное →</a
+        ><a href="login.html">Личный кабинет →</a
+        ><a href="journal.html">Журнал →</a
+        ><a href="contacts.html">Контакты →</a>
+      </nav>
+    </dialog>
+    <dialog
+      id="contact-dialog"
+      class="dialog dialog--contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="dialog__header">
+        <div>
+          <p class="eyebrow">EVERGLOW</p>
+          <h2 id="contact-title">Связаться с нами</h2>
+        </div>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть форму"
+        >
+          ×
+        </button>
+      </div>
+      <form class="form" data-contact-form>
+        <p class="muted">
+          Оставьте вопрос — консультант свяжется с вами в рабочее время.
+        </p>
+        <label class="field"
+          ><span>Имя</span
+          ><input
+            type="text"
+            name="name"
+            autocomplete="name"
+            required
+            minlength="2" /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Телефон</span
+          ><input
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            inputmode="tel"
+            required /><span class="field__message"></span></label
+        ><label class="field"
+          ><span>Вопрос</span
+          ><textarea name="question" rows="4" required minlength="5"></textarea
+          ><span class="field__message"></span></label
+        ><button class="button" type="submit">Отправить вопрос</button>
+        <p
+          class="form__status"
+          data-form-status
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </dialog>
+    <dialog id="message-dialog" class="dialog" aria-labelledby="message-title">
+      <div class="dialog__header">
+        <h2 id="message-title">Информация</h2>
+        <button
+          class="icon-button"
+          type="button"
+          data-close
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+      </div>
+      <div data-message></div>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <noscript
+      ><p class="container notice">
+        Каталог доступен без JavaScript. Для интерактивных функций включите
+        JavaScript.
+      </p></noscript
+    >
+  </body>
+</html>
