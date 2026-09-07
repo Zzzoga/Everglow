@@ -278,8 +278,7 @@ select:focus-visible {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
-.text-link:hover,
-a:not(.button):hover {
+.text-link:hover, a:not(.button):not(.chip):not(.header--overlay a):hover {
   color: var(--sale);
 }
 .chips {
@@ -324,6 +323,7 @@ a:not(.button):hover {
   background: white;
   position: relative;
   top: 1.125rem;
+  transition: all .25s ease;
 }
 .header__nav {
   display: flex;
@@ -381,7 +381,7 @@ a:not(.button):hover {
   height: 1.1rem;
   padding: 0 0.2rem;
   border-radius: 1rem;
-  background: var(--sale);
+  background: var(--focus);
   color: white;
   font-size: 0.625rem;
   display: flex;
@@ -576,12 +576,12 @@ a:not(.button):hover {
   position: absolute;
   top: 0.875rem;
   left: 0.875rem;
-  padding: 0.2rem 0.625rem;
+  padding: .5rem;
   font-size: 0.625rem;
   font-weight: 700;
-  background: var(--text);
+  background: #426737;
   color: white;
-  border-radius: 3rem;
+  border-radius: 5px;
 }
 .product-card__content {
   display: flex;
@@ -1303,7 +1303,7 @@ a:not(.button):hover {
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 .form__row {
   display: grid;

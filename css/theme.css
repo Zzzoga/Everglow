@@ -474,7 +474,7 @@ h6 {
 }
 
 .header--overlay .header__bar {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgb(255 255 255 / 20%);
   border-color: rgba(255, 255, 255, 0.32);
   backdrop-filter: blur(5px);
 }
@@ -492,15 +492,15 @@ h6 {
 }
 
 .header--overlay.header--scrolled {
-  background: rgba(255, 255, 255, 0.97);
+  /* background: rgba(255, 255, 255, 0.97); */
   color: var(--text);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
 .header--overlay.header--scrolled .header__bar {
-  background: rgba(255, 255, 255, 0.97);
+  background: rgb(255 255 255 / 50%);
   border-color: var(--border);
-  backdrop-filter: none;
+  /* backdrop-filter: none; */
 }
 
 .header--overlay.header--scrolled .icon-button {
@@ -513,6 +513,10 @@ h6 {
 
 .header--overlay.header--scrolled a:hover {
   color: var(--sale);
+}
+
+.header--overlay.header--scrolled .icon-button:hover {
+  background: var(--sale);
 }
 
 .header--overlay a::after {
@@ -623,7 +627,7 @@ header a:not(.button):not(.icon-button):not(.logo):hover::after {
 }
 
 .icon-button:hover {
-  background: var(--text);
+  background: var(--sale);
   color: #fff;
 }
 
@@ -640,8 +644,8 @@ header a:not(.button):not(.icon-button):not(.logo):hover::after {
 
 .chip:hover,
 .chip[aria-pressed="true"] {
-  background: var(--text);
-  border-color: var(--text);
+  background: var(--sale);
+  border-color: var(--sale);
   color: #fff;
 }
 
@@ -679,7 +683,7 @@ header a:not(.button):not(.icon-button):not(.logo):hover::after {
 
 .reveal {
   transform: none;
-  transition: opacity 0.48s ease var(--reveal-delay, 0ms);
+  transition: all .25s ease;
 }
 
 .sort:focus-within::after {
@@ -687,7 +691,7 @@ header a:not(.button):not(.icon-button):not(.logo):hover::after {
 }
 
 .hero-slider .hero__control-bar .icon-button:hover {
-  background: var(--text);
+  background: var(--sale);
   color: #fff;
 }
 
